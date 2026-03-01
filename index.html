@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viral AI Prompt Generator | Free Trending Prompts</title>
+<meta name="description" content="Generate trending AI image prompts, YouTube Shorts ideas, Instagram reel hooks and viral content ideas for free.">
+<meta name="keywords" content="AI prompt generator, viral prompts, YouTube shorts ideas, AI image prompts free">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.output {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>🔥 Viral AI Prompt Generator</h1>
+<p>Create Trending AI Prompts for Free</p>
+
+<button onclick="generatePrompt()">Generate AI Image Prompt</button>
+<button onclick="generateShorts()">Generate YouTube Shorts Idea</button>
+<button onclick="generateReel()">Generate Instagram Reel Hook</button>
+
+<div class="output" id="result">Your generated prompt will appear here...</div>
+</div>
+
+<script>
+const imagePrompts = [
+"Ultra realistic cinematic portrait of a warrior in rain, 8K, dramatic lighting",
+"Anime style cyberpunk girl with neon city background, ultra detailed",
+"3D fantasy dragon flying over burning kingdom, hyper realistic",
+"Futuristic AI robot meditating in Himalayas, cinematic lighting"
+];
+
+const shortsIdeas = [
+"Top 5 facts about space you didn’t know",
+"1 minute horror story that will shock you",
+"AI predicts future of humans in 2050",
+"गरीब लड़के की सफलता की कहानी"
+];
+
+const reelHooks = [
+"Wait till the end 😱",
+"You won’t believe this...",
+"This changed my life forever",
+"Stop scrolling! This is important"
+];
+
+function generatePrompt() {
+    document.getElementById("result").innerText =
+    imagePrompts[Math.floor(Math.random()*imagePrompts.length)];
+}
+
+function generateShorts() {
+    document.getElementById("result").innerText =
+    shortsIdeas[Math.floor(Math.random()*shortsIdeas.length)];
+}
+
+function generateReel() {
+    document.getElementById("result").innerText =
+    reelHooks[Math.floor(Math.random()*reelHooks.length)];
+}
+</script>
+
+</body>
+</html>
